@@ -3,10 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Jules DiPrima - GRC Specialist & RMF SME</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
+        .container { max-width: 900px; margin: 20px auto; background-color: white; padding: 40px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 5px; }
+        header { border-bottom: 3px solid #1e3a8a; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { font-size: 2.5em; color: #1e3a8a; margin-bottom: 10px; }
+        .contact-info { display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.95em; color: #555; }
+        .contact-info p { margin: 0; }
+        h2 { font-size: 1.5em; color: #1e3a8a; margin-top: 30px; margin-bottom: 15px; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; }
+        h3 { font-size: 1.1em; color: #1e3a8a; margin-top: 15px; margin-bottom: 5px; }
+        .job-title { font-weight: bold; color: #1e3a8a; }
+        .date { color: #666; font-style: italic; font-weight: normal; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 10px; color: #444; line-height: 1.7; }
+        .summary { font-size: 1em; color: #444; line-height: 1.8; margin-bottom: 20px; }
+        .education-item { margin-bottom: 15px; }
+        .degree { font-weight: bold; color: #1e3a8a; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; }
+        .skill-tag { background-color: #e3f2fd; color: #1e3a8a; padding: 10px 14px; border-radius: 4px; border-left: 3px solid #1e3a8a; font-size: 0.95em; text-align: center; }
+        .links { margin-top: 20px; padding-top: 20px; border-top: 2px solid #e0e0e0; }
+        .links a { display: inline-block; margin-right: 20px; color: #1e3a8a; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        .links a:hover { color: #0f172a; text-decoration: underline; }
+        .visitor-counter { margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0e0e0; text-align: center; color: #666; font-size: 0.9em; }
+        @media (max-width: 600px) { .container { padding: 20px; } h1 { font-size: 2em; } .contact-info { flex-direction: column; gap: 5px; } }
+    </style>
 </head>
 <body>
-    <h1>Professional Summary</h1>
-    <p>Jules DiPrima is a Governance, Risk, and Compliance (GRC) Specialist and Risk Management Framework (RMF) Subject Matter Expert with 7+ years of experience leading security, compliance, and risk management initiatives across federal, regulated, and high-growth environments. Deep expertise in frameworks including NIST RMF / SP 800-53 Rev. 5, NIST CSF, FedRAMP, and continuous authorization (cATO) programs. Known for translating complex regulatory requirements into scalable, automated, engineer-friendly compliance frameworks. Strong background in technical program management, audit readiness, automation, and cross-functional leadership.</p>
+    <div class="container">
+        <header>
+            <h1>Jules DiPrima</h1>
+            <div class="contact-info">
+                <p>📧 diprima.jules@gmail.com</p>
+                <p>📱 978-956-4385</p>
+                <p>📍 Capital Region, NY</p>
+                <p><a href="https://www.linkedin.com/in/julianna-diprima/" style="color: #1e3a8a;">LinkedIn</a></p>
+                <p><a href="https://github.com/jmdiprima" style="color: #1e3a8a;">GitHub</a></p>
+            </div>
+        </header>
+
+        <section class="professional-summary">
+            <h2>Professional Summary</h2>
+            <p class="summary">Jules DiPrima is a Governance, Risk, and Compliance (GRC) Specialist and Risk Management Framework (RMF) Subject Matter Expert with 7+ years of experience leading security, compliance, and risk management initiatives across federal, regulated, and high-growth environments. Deep expertise in frameworks including NIST RMF / SP 800-53 Rev. 5, NIST CSF, FedRAMP, and continuous authorization (cATO) programs. Known for translating complex regulatory requirements into scalable, automated, engineer-friendly compliance frameworks. Strong background in technical program management, audit readiness, automation, and cross-functional leadership.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Professional Experience</h2>
+            <h3><span class="job-title">GRC Specialist / RMF Subject Matter Expert</span></h3>
+            <p><strong>Aquia Inc</strong> <span class="date">| 2024 - Present</span></p>
+            <ul>
+                <li>Served as the Risk Management Framework (RMF) Subject Matter Expert for a Continuous Authorization to Operate (cATO) program supporting the United States Patent and Trademark Office (USPTO), providing authoritative guidance on NIST SP 800-53 Rev. 5 interpretation, implementation, and assessment for cloud-based FISMA Moderate systems</li>
+                <li>Advised on the transformation of a manual, documentation-centric ATO process into an automated, real-time compliance framework, reducing time-to-ATO by ~50% and freeing ~50% of security and engineering hours previously spent on manual evidence collection</li>
+                <li>Consulted on the design and deployment of USPTO's first automated assessment capability, acting as RMF SME for control selection, mapping, and assessment logic, covering 2,784 AWS control mappings and leveraging AWS Audit Manager to replace manual assessment activities with API-driven automated evidence collection</li>
+                <li>Leveraged secure AI-enabled capabilities to produce, review, and validate 2,784 control implementation statements aligned to individual automated assessment mappings, reducing an estimated 8 months of manual effort to 6 weeks while improving audit defensibility and assessor confidence</li>
+                <li>Governed a comprehensive RMF-aligned control inheritance data model spanning 9 common control providers and 348 NIST 800-53 Moderate baseline controls</li>
+                <li>Consulted on the design, documentation, and automation of 20+ RMF-aligned GRC workflows supporting continuous compliance, including control monitoring, evidence lifecycle management, POA&M governance, assessor response workflows, and authorization readiness across the full system lifecycle</li>
+                <li>Partnered closely with engineering, platform, and security operations teams to translate regulatory requirements into system-aligned, automation-friendly implementations compatible with modern cloud and DevSecOps environments</li>
+                <li>Served as the primary RMF authority and technical liaison for assessors, auditors, and federal stakeholders, supporting automated assessment validation, risk articulation, control interpretation, and remediation planning</li>
+                <li>Led, advised, and mentored a cross-functional GRC training team, setting curriculum strategy, delivery milestones, and quality standards while aligning technical enablement, knowledge management, and human-centric security training to RMF and cATO program objectives, ensuring agency-wide adoption and sustained operational competency</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Southern New Hampshire University</h3>
+                <p class="degree">Bachelor of Arts in Digital Marketing</p>
+                <p class="date">2020</p>
+            </div>
+            <div class="education-item">
+                <h3>Mount Wachusett Community College</h3>
+                <p class="degree">Associate of Science in Legal Studies</p>
+                <p class="date">2015</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Project Management</div>
+                <div class="skill-tag">GRC</div>
+                <div class="skill-tag">NIST RMF</div>
+                <div class="skill-tag">FedRAMP</div>
+                <div class="skill-tag">Cloud Security</div>
+                <div class="skill-tag">Risk Management</div>
+                <div class="skill-tag">Compliance</div>
+                <div class="skill-tag">AWS</div>
+                <div class="skill-tag">Process Improvement</div>
+                <div class="skill-tag">Technical Program Management</div>
+                <div class="skill-tag">Communications</div>
+                <div class="skill-tag">Governance</div>
+                <div class="skill-tag">FISMA</div>
+                <div class="skill-tag">Continuous Authorization</div>
+                <div class="skill-tag">Control Assessment</div>
+                <div class="skill-tag">Security Engineering</div>
+            </div>
+        </section>
+
+        <section class="links">
+            <h2>Connect With Me</h2>
+            <a href="https://www.linkedin.com/in/julianna-diprima/" target="_blank">🔗 LinkedIn Profile</a>
+            <a href="https://github.com/jmdiprima" target="_blank">🐙 GitHub Profile</a>
+        </section>
+
+        <div class="visitor-counter">
+            <p>Visitors: <span id="counter">0</span></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('counter').innerText = '1';
+    </script>
 </body>
 </html>
