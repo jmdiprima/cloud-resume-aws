@@ -1,0 +1,12 @@
+# Copy this file to terraform.tfvars and customize the values.
+# Do NOT commit terraform.tfvars — it may contain sensitive or environment-specific values.
+
+domain_name         = "julesdiprima.com"
+aws_region          = "us-east-2"
+s3_bucket_name      = "cloud-resume-julesdiprima"
+dynamodb_table_name = "cloud-resume-visitor-count"
+
+project_tags = {
+  Project   = "cloud-resume-challenge"
+  ManagedBy = "terraform"
+}
