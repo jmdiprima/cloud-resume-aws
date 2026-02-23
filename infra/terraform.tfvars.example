@@ -1,0 +1,9 @@
+# Copy this file to terraform.tfvars and fill in your values
+# Do NOT commit terraform.tfvars to version control
+
+# aws_region       = "us-east-2"
+# project_name     = "cloud-resume"
+# environment      = "prod"
+# domain_name      = "julesdiprima.com"
+# resume_subdomain = "resume"
+# blog_subdomain   = "blog"

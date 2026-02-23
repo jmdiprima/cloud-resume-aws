@@ -1,0 +1,16 @@
+# Backend deployment pipeline
+# Triggers on push to main when backend/ files change
+# Steps: run tests, package Lambda, update function
+name: Deploy Backend
+on:
+  push:
+    branches: [main]
+    paths: ['backend/**']
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Add Python setup, test run, Lambda deploy
