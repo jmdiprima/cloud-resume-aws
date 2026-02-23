@@ -1,0 +1,16 @@
+# Frontend deployment pipeline
+# Triggers on push to main when frontend/ files change
+# Steps: sync to S3, invalidate CloudFront cache
+name: Deploy Frontend
+on:
+  push:
+    branches: [main]
+    paths: ['frontend/**']
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Add OIDC auth, S3 sync, CloudFront invalidation

@@ -1,0 +1,16 @@
+# Infrastructure pipeline
+# Triggers on push to main when infra/ files change
+# Steps: terraform init, validate, plan, apply
+name: Terraform
+on:
+  push:
+    branches: [main]
+    paths: ['infra/**']
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Add OIDC auth, Terraform setup, plan/apply
