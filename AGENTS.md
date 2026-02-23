@@ -38,6 +38,12 @@ cloud-resume-aws/
 └── AGENTS.md          # This file
 ```
 
+## AWS Region Configuration
+- Primary region: us-east-2 (Ohio) — Lambda, DynamoDB, API Gateway, S3, SQS, CloudWatch, CloudTrail
+- ACM certificates for CloudFront: us-east-1 (required by AWS)
+- WAF WebACLs for CloudFront: us-east-1 (required by AWS)
+- Terraform state bucket: us-east-2
+
 ## Coding Standards
 - Python: Follow PEP 8, use type hints, include docstrings on all public functions
 - Terraform: Use consistent naming with var.project_name prefix, tag every resource,
@@ -69,8 +75,7 @@ cloud-resume-aws/
 - Domain: julesdiprima.com
 - Resume subdomain: resume
 - Blog subdomain: blog
-- AWS Region: us-east-1
+- Primary AWS Region: us-east-2
 - Project name prefix: cloud-resume
 - Environment: prod
 - GitHub repo: jmdiprima/cloud-resume-aws
-```
